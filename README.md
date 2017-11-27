@@ -1,2 +1,2 @@
 # AngularTests
-Learning Angular..
+Learning Angular...
