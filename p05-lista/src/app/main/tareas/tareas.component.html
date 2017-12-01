@@ -1,0 +1,34 @@
+
+<div class="card">
+    <div class="card-header">
+      <h3>Tareas</h3>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="tarea">Escribe una tarea</label>
+        <input type="text" [(ngModel)]="sTarea" 
+          class="form-control" name="tarea" id="tarea" >
+      </div>
+      <button class="btn btn-primary"
+        (click)="addTarea()" >Añadir</button>
+    </div>
+    <div *ngIf="aTareas.length; then ideasTemplate else vacioTemplate"
+      class="card-footer text-muted"></div>
+
+    <ng-template #ideasTemplate> 
+      <h4>Lista de tareas</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"
+        *ngFor="let tarea of aTareas; let i = index">
+          <span class="col">{{tarea}}</span>
+          <button class="btn btn-sm btn-danger"
+          (click)="deleteTarea(i)">Eliminar</button>
+        </li>
+      </ul>
+    </ng-template>
+
+    <ng-template #vacioTemplate>
+      <p>Animate y añade alguna tarea</p>
+    </ng-template>
+   
+  </div>

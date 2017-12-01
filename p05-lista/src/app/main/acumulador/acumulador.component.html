@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">
+   <h4>Acumulador</h4>
+  </div>
+  <div class="card-body">
+    <button class="btn btn-primary"
+      (click)="nTotal = nTotal+1">++</button>
+    <button class="btn btn-primary"
+    (click)="nTotal = nTotal-1">--</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p>Total: <span [ngClass]="{positivo: nTotal>=0, 
+        negativo: nTotal<0 }">{{nTotal}}
+        </span>
+    </p>
+  </div>
+</div>

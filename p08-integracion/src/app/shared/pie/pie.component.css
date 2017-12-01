@@ -1,0 +1,16 @@
+.fixed {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+
+}
+.footer {
+    min-height: 5rem;
+
+}
+.foot-color {
+    background-color: darkslategray;
+    color: darkgray;
+}

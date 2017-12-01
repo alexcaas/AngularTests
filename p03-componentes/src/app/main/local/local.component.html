@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Referencias locales</h3>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="nombre">Escribe tu nombre</label>
+      <input type="text" #nombre
+        class="form-control" name="nombre" id="nombre" 
+        placeholder="Escribe tu nombre">
+    </div>
+    <button class="btn btn-primary"
+      (click)=" nombre.value = nombre.value ">Guardar</button>
+    <button class="btn btn-primary"
+      (click)="nombre.value = '' " >Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p>Hola {{ nombre.value}}</p>
+  </div>
+</div>

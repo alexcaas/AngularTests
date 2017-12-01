@@ -1,0 +1,19 @@
+<div class="card mb-2">
+  <div class="card-header">
+      <p class="h4">Expresiones</p>
+  </div>
+  <div class="card-body">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="" id="" 
+        [(ngModel)]="isSpanish">
+        Selecciona si hablas español
+      </label>
+    </div>     
+  </div>
+  <div class="card-footer text-muted">
+      <p>Hola {{sName.toUpperCase()}}</p>
+      <p>El producto de {{nNumber}} * 4 es: {{nNumber * 4}}</p>
+      <p>{{isSpanish ?'Gracias':'Thanks'}}</p>
+  </div>
+</div>
